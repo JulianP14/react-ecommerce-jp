@@ -1,0 +1,34 @@
+.tiendaReloj{
+  color: #000;
+}
+
+.tiendaReloj:hover{
+  color: #8c8c8c
+}
+
+/* CartWidget */
+.cartWidgetContainer{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.cW-ContainerDiv{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0 .7rem;
+
+}
+
+.cW-Cd-P{
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Item List Container */
+
+.itemLcontainerH1{
+  text-align: center;
+  padding: 1rem 0;
+}
