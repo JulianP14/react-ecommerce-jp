@@ -1,9 +1,34 @@
 import React from 'react'
 
-export const ItemListContainer = ({greeting}) => {
+/* Consulta la DB y la renderiza */
+import { consultDB } from '../../utils/functions'
+import { useState, useEffect } from 'react'
+import { ItemList } from '../ItemList/ItemList'
+
+export const ItemListContainer = () => {
+
+    const [prods, setProds] = useState([]);
+
+    useEffect(() => {
+        /* 
+        const consultarDatos = async () => {
+            const prods = await consultDB('./json/products.json')
+            console.log(prods)
+        }
+        consultarDatos(); 
+        */
+
+        consultDB('./json/products.json')
+            .then(prods => {
+                const items = ItemList({prods})
+                // console.log(items)
+                setProds(items)
+            });
+    }, []);
+
     return (
-        <>
-            <h1 className='itemLcontainerH1'>{greeting}</h1>
-        </>
+        <div className="row cardProds">
+            {prods}
+        </div>
     )
 }

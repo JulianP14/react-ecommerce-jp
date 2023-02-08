@@ -32,3 +32,35 @@
   text-align: center;
   padding: 1rem 0;
 }
+
+.cardProds {
+  margin: 1rem ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Item */
+
+.cardProd{
+  width: 30%;
+  margin: .5rem;
+  background-color: #f2f2f2;
+}
+
+.cardBody{
+  margin: .5rem 0;
+  align-items: center;
+  text-align: center;
+}
+
+img{
+  margin: 1rem 0 0 0;
+}
+
+/* ItemDetailContainer */
+
+.itemDetail{
+  max-width: 540px;
+  margin-top: 20px;
+}
