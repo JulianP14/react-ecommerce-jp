@@ -4,27 +4,35 @@ import React from 'react'
 import { consultDB } from '../../utils/functions'
 import { useState, useEffect } from 'react'
 import { ItemList } from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom'
 
 export const ItemListContainer = () => {
 
+    const { idCategoria, stock } = useParams();
     const [prods, setProds] = useState([]);
 
-    useEffect(() => {
-        /* 
-        const consultarDatos = async () => {
-            const prods = await consultDB('./json/products.json')
-            console.log(prods)
-        }
-        consultarDatos(); 
-        */
+    console.log(idCategoria, stock)
 
-        consultDB('./json/products.json')
-            .then(prods => {
-                const items = ItemList({prods})
-                // console.log(items)
-                setProds(items)
-            });
-    }, []);
+    useEffect(() => {
+
+        if (idCategoria) { //Undefined retorna falso
+            consultDB('../json/products.json')
+                .then(products => {
+                    const prods = products.filter(prod => prod.categoria ===(idCategoria));
+                    const items = ItemList({ prods })
+                    // console.log(items)
+                    setProds(items)
+                });
+        } else {
+            consultDB('./json/products.json')
+                .then(prods => {
+                    const items = ItemList({ prods })
+                    // console.log(items)
+                    setProds(items)
+                });
+        }
+
+    }, [idCategoria]);
 
     return (
         <div className="row cardProds">
