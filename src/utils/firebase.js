@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, doc, addDoc, getDocs, getDoc, updateDoc, deleteDoc } from 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDBgoAECogrP6O8xyh899YWjR1Dp9QDpSk",
+    apiKey: process.env.API_KEY,
     authDomain: "react-ch-44995.firebaseapp.com",
     projectId: "react-ch-44995",
     storageBucket: "react-ch-44995.appspot.com",
