@@ -2,89 +2,199 @@
     {
         "id": 1,
         "idCategoria": 1,
-        "categoria": "mujer",
+        "categoria": "Mujer",
         "nombre": "Reloj Conquest",
         "marca": "Longines",
         "modelo": "Classic L2.286.3.72",
         "precio": 1500,
         "stock": 10,
-        "img": "relojmujer1.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojmujer1.jpg?alt=media&token=8e0920a1-f349-4e9e-b9f0-0d8c47029c98"
     },
     {
         "id": 2,
         "idCategoria": 1,
-        "categoria": "mujer",
+        "categoria": "Mujer",
         "nombre": "Reloj Conquest",
         "marca": "Longines",
         "modelo": "Classic L2.286.3.92",
         "precio": 1500,
         "stock": 10,
-        "img": "relojmujer2.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojmujer2.jpg?alt=media&token=7b9dcc6b-373c-4020-8368-af5af2088c2f"
     },
     {
         "id": 3,
         "idCategoria": 1,
-        "categoria": "mujer",
+        "categoria": "Mujer",
         "nombre": "Reloj Conquest",
         "marca": "Longines",
         "modelo": "Classic L2.386.4.52",
         "precio": 2350,
         "stock": 10,
-        "img": "relojmujer3.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojmujer3.jpg?alt=media&token=6b531ca9-298c-4a09-99ee-48fa7598e329"
     },
     {
         "id": 4,
         "idCategoria": 1,
-        "categoria": "mujer",
+        "categoria": "Mujer",
         "nombre": "Reloj Conquest",
         "marca": "Longines",
         "modelo": "Classic L2.386.4.92",
         "precio": 1250,
         "stock": 10,
-        "img": "relojmujer4.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojmujer4.jpg?alt=media&token=8c48c872-cb37-4642-871f-dfc9ec035e9c"
     },
     {
         "id": 5,
+        "idCategoria": 1,
+        "categoria": "Mujer",
+        "nombre": "Reloj Rolex",
+        "marca": "Rolex",
+        "modelo": "GMT-Master II",
+        "precio": 8500,
+        "stock": 5,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojmujer5.jpg?alt=media&token=7c079fba-e388-4c73-9993-0c2367f85a29"
+    },
+    {
+        "id": 6,
+        "idCategoria": 1,
+        "categoria": "Mujer",
+        "nombre": "Reloj Rolex",
+        "marca": "Rolex",
+        "modelo": "Day-Date 40",
+        "precio": 8750,
+        "stock": 5,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojmujer6.jpg?alt=media&token=0ec28908-15eb-4a8a-935c-64e3d41ade09"
+    },
+    {
+        "id": 7,
         "idCategoria": 2,
-        "categoria": "hombre",
+        "categoria": "Hombre",
         "nombre": "Reloj Conquest",
         "marca": "Longines",
         "modelo": "L3.759.4.58",
         "precio": 1150,
         "stock": 10,
-        "img": "relojhombre1.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojhombre1.jpg?alt=media&token=8d939c0d-9276-482c-a894-309d983a74c5"
     },
     {
-        "id": 6,
+        "id": 8,
         "idCategoria": 2,
-        "categoria": "hombre",
+        "categoria": "Hombre",
         "nombre": "Reloj Conquest",
         "marca": "Longines",
         "modelo": "L3.777.4.76",
         "precio": 1800,
         "stock": 10,
-        "img": "relojhombre2.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojhombre2.jpg?alt=media&token=728cb8df-567a-42a3-94c1-838b19983c59"
     },
     {
-        "id": 7,
+        "id": 9,
         "idCategoria": 2,
-        "categoria": "hombre",
+        "categoria": "Hombre",
         "nombre": "Reloj HydroConquest",
         "marca": "Longines",
         "modelo": "L3.740.4.96",
         "precio": 1360,
         "stock": 10,
-        "img": "relojhombre3.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojhombre3.jpg?alt=media&token=1352a59b-b798-4d65-b3eb-258f350fb34d"
     },
     {
-        "id": 8,
+        "id": 10,
         "idCategoria": 2,
-        "categoria": "hombre",
+        "categoria": "Hombre",
         "nombre": "Reloj Conquest",
         "marca": "Longines",
         "modelo": "V.H.P. L3.717.4.56",
         "precio": 2250,
         "stock": 10,
-        "img": "relojhombre4.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojhombre4.jpg?alt=media&token=d37d6fca-3aeb-4d90-94b4-59b946af8b98"
+    },
+    {
+        "id": 11,
+        "idCategoria": 2,
+        "categoria": "Hombre",
+        "nombre": "Reloj Rolex",
+        "marca": "Rolex",
+        "modelo": "Air-King",
+        "precio": 9000,
+        "stock": 5,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojhombre5.jpg?alt=media&token=59e2b3a3-f36a-49fb-99e5-1695401893b9"
+    },
+    {
+        "id": 12,
+        "idCategoria": 2,
+        "categoria": "Hombre",
+        "nombre": "Reloj Rolex",
+        "marca": "Rolex",
+        "modelo": "Submariner",
+        "precio": 8500,
+        "stock": 5,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/relojhombre6.jpg?alt=media&token=951ad217-8074-4b0d-a1af-fb81ffa31cf0"
+    },
+    {
+        "id": 13,
+        "idCategoria": 3,
+        "categoria": "Smartwatch",
+        "nombre": "Reloj Samsung Galaxy",
+        "marca": "Samsung",
+        "modelo": "Watch 4",
+        "precio": 160,
+        "stock": 12,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/smartwatch1.jpg?alt=media&token=39e2c26e-ca68-45de-b38a-163a540122f8"
+    },
+    {
+        "id": 14,
+        "idCategoria": 3,
+        "categoria": "Smartwatch",
+        "nombre": "Reloj Xiaomi Mi",
+        "marca": "Xiaomi",
+        "modelo": "Smart Band 7",
+        "precio": 48,
+        "stock": 20,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/smartwatch2.jpg?alt=media&token=cf224230-c8d8-4fa5-9329-985e2e87aa9e"
+    },
+    {
+        "id": 15,
+        "idCategoria": 3,
+        "categoria": "Smartwatch",
+        "nombre": "Reloj Xiaomi Redmi",
+        "marca": "Xiaomi",
+        "modelo": "Watch 2",
+        "precio": 50,
+        "stock": 20,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/smartwatch3.jpg?alt=media&token=dc97c496-235a-4e26-9e65-8e0d3627e852"
+    },
+    {
+        "id": 16,
+        "idCategoria": 3,
+        "categoria": "Smartwatch",
+        "nombre": "Reloj Gadnic",
+        "marca": "Gadnic",
+        "modelo": "RSW9",
+        "precio": 45,
+        "stock": 20,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/smartwatch4.jpg?alt=media&token=d6557ce5-ba64-4e05-bba7-7b68e980c361"
+    },
+    {
+        "id": 17,
+        "idCategoria": 3,
+        "categoria": "Smartwatch",
+        "nombre": "Reloj Colmi",
+        "marca": "Colmi",
+        "modelo": "P8",
+        "precio": 25,
+        "stock": 50,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/smartwatch5.jpg?alt=media&token=8afe5b90-732c-413a-83fd-838a9cd375aa"
+    },
+    {
+        "id": 18,
+        "idCategoria": 3,
+        "categoria": "Smartwatch",
+        "nombre": "Reloj Samsung Galaxy",
+        "marca": "Samsung",
+        "modelo": "Watch 5 Pro",
+        "precio": 300,
+        "stock": 5,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-ch-44995.appspot.com/o/smartwatch6.jpg?alt=media&token=fb77a692-0f14-427d-ace9-e70f13d28e58"
     }
 ]

@@ -1,66 +1,197 @@
-.tiendaReloj{
+img{ 
+  margin-top: .3rem;
+}
+
+.tiendaReloj {
   color: #000;
 }
 
-.tiendaReloj:hover{
+.tiendaReloj:hover {
   color: #8c8c8c
 }
 
 /* CartWidget */
-.cartWidgetContainer{
+.cartWidgetContainer {
   display: flex;
   flex-direction: row;
   align-content: center;
 }
 
-.cW-ContainerDiv{
+.cW-ContainerDiv {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   align-items: center;
-  padding: 0 .7rem;
-
+  padding: 0 1rem;
 }
 
-.cW-Cd-P{
+.cartQuantity{
+  display: flex;
+  flex-direction: row;
+  padding: .5rem;
+}
+
+.cW-Cd-P {
+  border: 1px solid black !important;
   font-size: 1rem;
   margin: 0;
 }
 
+.cantCarrito{
+  color: #000;
+}
+
+/* CART */
+.emptyCart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.cartContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardCart {
+  max-width: 100%;
+  width: 60%;
+  margin: 1rem 0 0 0;
+}
+
+.divButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem ;
+}
+
+.divButtons button {
+  border: 1px solid black;
+  margin: 0 1rem 0 1rem;
+}
+
+.cartResumenCompra{
+  text-align: center;
+  color: #000;
+  font-weight: 650;
+}
+
+    /* ITEMCART */
+    .cardBody {
+      align-items: center;
+      text-align: center;
+      padding: 2rem 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .card-img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+
+
 /* Item List Container */
 
-.itemLcontainerH1{
+.prodsGeneral{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.itemLcontainerH1 {
   text-align: center;
   padding: 1rem 0;
 }
 
-.cardProds {
-  margin: 1rem ;
-  align-items: center;
+.cardProductos {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  width: 100% !important;
 }
-
 
 /* Item */
 
-.cardProd{
-  width: 30%;
+.cardProd {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
   margin: .5rem;
   background-color: #f2f2f2;
 }
 
-.cardBody{
-  margin: .5rem 0;
+.card-img-top{
+  width: auto;
+  height: 50%;
+}
+
+
+.cardProdDark {
+  background-color: #6d6d6d;
   align-items: center;
   text-align: center;
 }
 
-img{
-  margin: 1rem 0 0 0;
+
+/* ITEM COUNT */
+.btnCount{
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
+
 
 /* ItemDetailContainer */
 
-.itemDetail{
+.itemDetail {
   max-width: 540px;
   margin-top: 20px;
+}
+
+.itemDetailBodyDark {
+  background-color: #6d6d6d;
+  color: #fff;
+
+
+}
+
+/* Checkout */
+
+.formDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contForm {
+  margin: 1rem 0;
+  border: .1rem solid #b9b9b9;
+  padding: 1rem;
+}
+
+/* Dark Mode General */
+.darkMode {
+  background-color: #000;
+  color: #8c8c8c;
+}
+
+.cantCarrito {
+  position: relative;
+  left: 15%
+}
+
+.fD-error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fD-error h2{
+  margin: 2rem 0;
 }

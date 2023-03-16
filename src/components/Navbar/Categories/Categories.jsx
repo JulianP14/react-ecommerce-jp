@@ -1,39 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-export const Categories = () => {
-
-    const categorias = [
-        {
-            nombre: "mujer",
-            idCategoria: 1
-        },
-        {
-            nombre: "hombre",
-            idCategoria: 2
-        }
-    ]
-
+export const Categories = React.memo(() => {
 
     return (
         <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <button className='btn btn-primary'>Categorias</button>
+                <button className="btn btn-dark">Categorias</button>
             </a>
             <ul className="dropdown-menu">
-                {
-                    categorias.map((cat, bla) => {
-                        console.log(cat, bla)
-                        return (
-                            <>
-                                <li key={cat.id}>
-                                    <Link className='dropdown-item' to={`/category/${cat.nombre}`}>Relojes de {cat.nombre}</Link>
-                                </li>
-                                <hr className="dropdown-divider" />
-                            </>
-                        )
-                    })
-                }
+                <li><Link className="dropdown-item" to={'/category/Mujer'}>Relojes de Mujer</Link></li>
+                <li><Link className="dropdown-item" to={'/category/Hombre'}>Relojes de Hombre</Link></li>
+                <li><Link className="dropdown-item" to={'/category/Smartwatch'}>Smartwatches</Link></li>
+
             </ul>
         </li>
     )
 }
+)

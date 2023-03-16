@@ -1,42 +1,36 @@
 import React from 'react'
-
-/* Consulta la DB y la renderiza */
-import { consultDB } from '../../utils/functions'
+import { consultDB } from '../../utils/firebase'
 import { useState, useEffect } from 'react'
 import { ItemList } from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 
 export const ItemListContainer = () => {
 
-    const { idCategoria, stock } = useParams();
-    const [prods, setProds] = useState([]);
-
-    console.log(idCategoria, stock)
-
+    const { categoria } = useParams()
+    const [productos, setProductos] = useState([])
+    
+    console.log(categoria)
     useEffect(() => {
-
-        if (idCategoria) { //Undefined retorna falso
-            consultDB('../json/products.json')
-                .then(products => {
-                    const prods = products.filter(prod => prod.categoria ===(idCategoria));
-                    const items = ItemList({ prods })
-                    // console.log(items)
-                    setProds(items)
-                });
+        if (categoria) { // Undefined me da falso
+            consultDB().then(products => {
+                const prods = products.filter(prod => prod.stock > 0).filter(prod => prod.categoria === (categoria))
+                const items = <ItemList prods={prods} plantilla="Item" />
+                setProductos(items)
+            })
         } else {
-            consultDB('./json/products.json')
-                .then(prods => {
-                    const items = ItemList({ prods })
-                    // console.log(items)
-                    setProds(items)
-                });
+            consultDB().then(products => {
+                const prods = products.filter(prod => prod.stock > 0)
+                const items = <ItemList prods={prods} plantilla="Item" />
+                setProductos(items)
+            })
         }
-
-    }, [idCategoria]);
+    }, [categoria])
 
     return (
-        <div className="row cardProds">
-            {prods}
+        <div className='prodsGeneral'>
+            <div className='row cardProductos container'>
+                {productos}
+            </div>
         </div>
     )
 }

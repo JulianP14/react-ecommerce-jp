@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { consultDB } from '../../utils/functions'
+import { getProd } from '../../utils/firebase'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 export const ItemDetailContainer = () => {
@@ -8,12 +8,11 @@ export const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([]);
 
     useEffect(() => {
-        consultDB('../json/products.json')
-            .then((prods) => {
-                const prod = prods.find(item => item.id === parseInt(id))
+        getProd(id)
+            .then(prod => {
                 setProducto(prod)
             })
-    })
+    }, [])
 
     return (
         <div className='card mb-3 container itemDetail'>
