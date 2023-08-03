@@ -211,6 +211,10 @@ img{
   align-items: center;
 }
 
+.btn {
+  padding: .5rem;
+}
+
 @media (max-width:1200px) {
   .prodsGeneral {
     display: flex;
@@ -224,17 +228,17 @@ img{
     flex-direction: column;
   }
 
-  .navbar-nav {
-    display: flex;
-    align-items: flex-start;
-  }
-
   .cartWidgetContainer{
     padding: 0;
   }
 
-  .btn {
-    padding: .5rem;
+  
+}
+
+@media(max-width: 991px) {
+  .navbar-nav {
+    display: flex;
+    align-items: flex-start;
   }
 }
 
@@ -251,9 +255,6 @@ img{
 }
 
 @media (max-width:580px) {
-  .prodsGeneral{
-    
-  }
 
   .cardProductos{
     display: grid;
