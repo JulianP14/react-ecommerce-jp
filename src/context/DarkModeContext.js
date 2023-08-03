@@ -1,4 +1,4 @@
-import { useContext, createContext, useState } from "react";
+/* import { useContext, createContext, useState } from "react";
 
 const DarkModeContext = createContext(); //Creando contexto
 
@@ -23,3 +23,4 @@ export const DarkModeProvider = (props) => {
         </DarkModeContext.Provider>
     )
 }
+ */

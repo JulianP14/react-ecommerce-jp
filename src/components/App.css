@@ -1,3 +1,4 @@
+
 img{ 
   margin-top: .3rem;
 }
@@ -15,13 +16,21 @@ img{
   display: flex;
   flex-direction: row;
   align-content: center;
+  padding: 0 1rem;
+}
+
+.cartWidget-cart {
+  transition: all .2s ease;
+}
+
+.cartWidget-cart:hover{
+  scale: 110%;
 }
 
 .cW-ContainerDiv {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 1rem;
 }
 
 .cartQuantity{
@@ -82,7 +91,6 @@ img{
     .cardBody {
       align-items: center;
       text-align: center;
-      padding: 2rem 0 0 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -121,15 +129,17 @@ img{
 
 .cardProd {
   display: flex;
-  flex-direction: column;
-  width: 32%;
+  flex-direction: row;
+  align-items: center;
+  width: 30%;
   margin: .5rem;
   background-color: #f2f2f2;
+  max-height: 450px;
 }
 
 .card-img-top{
-  width: auto;
-  height: 50%;
+  width: 150px;
+  max-height: 200px;
 }
 
 
@@ -194,4 +204,9 @@ img{
 
 .fD-error h2{
   margin: 2rem 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
 }

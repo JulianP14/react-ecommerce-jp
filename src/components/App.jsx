@@ -13,11 +13,11 @@ import { Cart } from './Cart/Cart'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 //Context
-import { DarkModeProvider } from '../context/DarkModeContext';
+/* import { DarkModeProvider } from '../context/DarkModeContext'; */
 import { CartProvider } from '../context/CartContext';
 
 //Firebase
-import { cargaDB, consultDB } from '../utils/firebase';
+/* import { cargaDB, consultDB } from '../utils/firebase'; */
 
 //Toastify
 import { ToastContainer } from 'react-toastify';
@@ -29,7 +29,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <DarkModeProvider>
+{/*         <DarkModeProvider> */}
           <CartProvider>
             <Navbar />
             <Routes>
@@ -42,8 +42,8 @@ const App = () => {
             </Routes>
             <ToastContainer />
           </CartProvider>
-        </DarkModeProvider>
-      </BrowserRouter >
+{/*         </DarkModeProvider> */}
+      </BrowserRouter>
     </>
   );
 }

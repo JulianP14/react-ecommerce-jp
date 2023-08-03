@@ -1,4 +1,4 @@
-import './darkModeButton.css'
+/* import './darkModeButton.css'
 
 import { useDarkModeContext } from '../../../context/DarkModeContext';
 
@@ -15,4 +15,4 @@ export const DarkModeButton = () => {
         </div>
 
     );
-}
+} */

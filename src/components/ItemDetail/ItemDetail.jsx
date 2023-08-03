@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { ItemCount } from '../ItemCount/ItemCount'
 //Context
-import { useDarkModeContext } from '../../context/DarkModeContext'
+/* import { useDarkModeContext } from '../../context/DarkModeContext' */
 import { useCartContext } from '../../context/CartContext'
 export const ItemDetail = ({ prod }) => {
-    const { darkMode } = useDarkModeContext();
+    /* const { darkMode } = useDarkModeContext(); */
     const { addItem } = useCartContext();
 
     const onAdd = (cantidad) => {
@@ -18,7 +18,7 @@ export const ItemDetail = ({ prod }) => {
                 <img src={prod.img} className=" img-fluid rounded-start" alt={prod.nombre} />
             </div>
             <div className="col-md-8">
-                <div className={`card-body ${darkMode && 'itemDetailBodyDark'}`}>
+                <div className={`card-body`}>
                     <h5 className="card-title">{prod.nombre}</h5>
                     <p className="card-text">Modelo: {prod.modelo}</p>
                     <p className="card-text">Marca: {prod.marca}</p>

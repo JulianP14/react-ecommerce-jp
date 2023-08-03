@@ -5,7 +5,7 @@ export const Sections = React.memo(
         return (
             <>
                 <li className="nav-item">
-                    <a className="nav-link tiendaReloj">Tienda Relojes</a>
+                    <a className="nav-link tiendaReloj" href='#1'>Tienda Relojes</a>
                 </li>
                 <li className="nav-item">
                     <Link className='nav-link' to={'/'}>
