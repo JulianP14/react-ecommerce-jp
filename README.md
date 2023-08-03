@@ -32,6 +32,6 @@ ES:
   La funcionalidad del proyecto se basa en la implementación de Firebase como una base de datos para que los stocks se descuenten acorde a las compras de los usuarios. Esta información fue previamente cargada a dicha base de datos con un archivo ".json". Dicho archivo todavía está disponible en el repositorio para utilizarlo nuevamente en un futuro por si se desea actualizar productos, stock, etc.
 
 EN: 
-  This project is about a fictional watches online store. Bootstrap was used (https://getbootstrap.com/) as the general styles implementer along with a specific Bootswatch Theme (Lux: https://bootswatch.com/lux/), and for final details I used CSS.
-  The functionality of the project is based on the implementation of Firebase as a Database so that stocks are discounted according to users' purchases. The information in Firebase was previously loaded using a ".json" file. Said file is still available in the repo to be used again in the future if needed to update products, stock, etc.
+  This project revolves around a fictional online watches store. I utilized Bootstrap (https://getbootstrap.com/) as the primary styling framework, along with a specific Bootswatch Theme (Lux: https://bootswatch.com/lux/). For fine-tuning the details, CSS was also used.
+The project's functionality relies on the implementation of Firebase as a Database, allowing the automatic deduction of stocks based on users' purchases. To populate the information in Firebase, I initially loaded it using a '.json' file. This file is still available in the repository, which can be handy for future updates or to modify products, stock, and other related details.
 
